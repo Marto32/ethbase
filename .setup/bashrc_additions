@@ -1,0 +1,8 @@
+# Customize the shell
+cd() { builtin cd "$@"; ls -FGlAhp; }
+alias cd..='cd ../'
+mcd () { mkdir -p "$1" && cd "$1"; }
+mgrep () { grep -rnIi "$1" . --color; }
+alias geth-init='bash ~/.setup/init_geth.sh'
+alias geth-console='bash ~/.setup/geth_console.sh'
+
