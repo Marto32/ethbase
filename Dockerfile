@@ -56,4 +56,13 @@ VOLUME /data
 RUN mkdir /code
 WORKDIR /code
 
-CMD jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
+# Finalize jupyter notebook setup
+# Per http://jupyter-notebook.readthedocs.io/en/latest/public_server.html#docker-cmd
+# Add Tini. Tini operates as a process subreaper for jupyter. This prevents kernel crashes.
+ENV TINI_VERSION v0.6.0
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /usr/bin/tini
+RUN chmod +x /usr/bin/tini
+
+ENTRYPOINT ["/usr/bin/tini", "--"]
+CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root", "--debug"]
+

@@ -32,6 +32,9 @@ If you want to run the container to prototype applications that use the ethereum
 ```
 docker run -it -p 8888:8888 ethereum/dev
 ```
+Copy and paste the url and token displayed in the shell output into your browser.
+
+That's it!
 
 ## Etherscan
 Within the Jupyter notebook, you can use the [etherscan apis](https://etherscan.io/apis) to build scripts that interact with the blockchain.
@@ -42,8 +45,6 @@ To remove containers and images ensure you're in your local bash environment and
 docker rm $(docker ps -aq)
 docker rmi $(docker images -aq)
 ```
-
-That's it!
 
 # Ethereum packages installed
 
