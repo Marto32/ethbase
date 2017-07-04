@@ -16,7 +16,6 @@ RUN apt-get install -y \
 
 RUN pip install --upgrade pip
 RUN pip install jupyter
-RUN pip install -Iv pyyaml==3.12
 
 # Install pyrlp
 RUN git clone https://github.com/ethereum/pyrlp /apps/pyrlp

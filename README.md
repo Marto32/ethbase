@@ -1,5 +1,5 @@
 # ethbase
-A boilerplate development environment for Ethereum
+A boilerplate development environment for Ethereum. Note: due to some known issues with `pyethereum` and some of its dependencies, you may see some warnings during the docker build. If you believe any of theses wanrings or errors are causing problems, please create a github issue.
 
 # Usage
 
