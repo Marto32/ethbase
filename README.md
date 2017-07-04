@@ -11,7 +11,7 @@ A boilerplate development environment for Ethereum. Note: due to some known issu
 ## Installation
 Ensure the docker daemon is running and execute these commands in the shell:
 ```
-git pull https://github.com/Marto32/ethbase.git
+git clone https://github.com/Marto32/ethbase.git
 cd ethbase
 docker build -t ethereum/dev .
 ```
