@@ -37,7 +37,7 @@ Copy and paste the url and token displayed in the shell output into your browser
 That's it!
 
 ## Etherscan
-Within the Jupyter notebook, you can use the [etherscan apis](https://etherscan.io/apis) to build scripts that interact with the blockchain. I've also built a python wrapper for that API which can be found here:[pyetherscan](https://github.com/Marto32/pyetherscan).
+Within the Jupyter notebook, you can use the [etherscan apis](https://etherscan.io/apis) to build scripts that interact with the blockchain. I've also built a python wrapper for that API which can be found here: [pyetherscan](https://github.com/Marto32/pyetherscan).
 
 # Removal
 To remove containers and images ensure you're in your local bash environment and run:
