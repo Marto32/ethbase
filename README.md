@@ -20,7 +20,7 @@ docker build -t ethereum/dev .
 ### Pyethapp
 If you want to run the container and use the `pyethapp` console, run the following commands:
 ```
-docker run -it --entrypoint /bin/bash -p 30304:30303 pyethapp/dev:bash
+docker run -it --entrypoint /bin/bash -p 30304:30303 ethereum/dev
 # Once in the container:
 $ cd /apps/pyethapp
 $ pyethapp account new
